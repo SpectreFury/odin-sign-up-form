@@ -20,16 +20,23 @@ body {
 }
 
 input {
-    outline: none;
+  outline: none;
 }
 
-input[type='password']{
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+input[type="password"]:valid {
+  border: 1px solid blue;
+}
+
+input[type='tel']:invalid {
     border: 1px solid red;
 }
 
 input:focus {
-    box-shadow: 0px 1px 2px #fff;
-    border: 1px solid blue;
+  box-shadow: 0px 1px 2px #fff;
+  border: 1px solid blue;
 }
 
 label {
@@ -42,27 +49,27 @@ label {
 }
 
 button {
-    cursor: pointer;
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px 40px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    background-color: wheat;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 40px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: wheat;
 }
 
-a{
-    text-decoration: none;
-    color: wheat;
+a {
+  text-decoration: none;
+  color: wheat;
 }
 
-.login-text{
-    font-weight: 500;
-    margin-left: 5px;
-    margin-top: 40px;
+.login-text {
+  font-weight: 500;
+  margin-left: 5px;
+  margin-top: 40px;
 }
 
 .flex-container {

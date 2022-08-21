@@ -32,7 +32,7 @@
             <p></p>
           </div>
 
-          <form class="grid-container" action="#">
+          <form class="grid-container" action="" id="our-form">
             <div class="grid-left">
               <div class="first-name">
                 <label for="first-name">First Name</label>
@@ -54,7 +54,7 @@
               </div>
               <div class="phone-number">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
               </div>
               <div class="conf-password">
                 <label for="conf-password">Confirm Password</label>
@@ -67,7 +67,7 @@
               </div>
             </div>
           </form>
-          <button type="submit">Create Account</button>
+          <button type="submit" form="our-form">Create Account</button>
           <div class="login-text">Already have an account? <a href="#">Log in</a></div>
 
 
